@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="entire-page">
+        <div class="image-side">
+            <img src="images/halie-west-25xggax4bSA-unsplash.jpg" alt="A picture of some leaves by Halie West" id="side-image">
+            <div class="over-image">MIKE</div>
+            <div class="credit">Photo by Halie West on Unsplash</div>
+        </div>
+        <div class="non-image-side">
+            <div class="top-section">
+                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
+                <p>Sign up now to get started.</p>
+                <br>
+                <p>You <span>know</span> you want to.</p>
+            </div>
+            <div class="form-section">
+                <p class="text-form">Let's do this!</p>
+                <form action="example.com" method="post" id="the-form">
+                    <div class="labels">
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" id="first-name" required name="first-name">
+                    </div>
+                    <div class="labels">
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" id="last-name" required name="last-name">
+                    </div>
+                    <div class="labels">
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" required pattern="^[A-Za-z0-9-]+(@gmail.com)$" name="email">
+                    </div>
+                    <div class="labels">
+                        <label for="phone-no">PHONE NUMBER</label>
+                        <input type="text" id="phone-no" required pattern="^(07)\d{9}$" name="phone-number">
+                    </div>
+                    <div class="labels">
+                        <label for="password">PASSWORD</label>
+                        <input type="text" id="password" required name="password">
+                    </div>
+                    <div class="labels">
+                        <label for="confirm-password">CONFIRM PASSWORD</label>
+                        <input type="text" id="confirm-password" name="confirm-password" required>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="bottom-section">
+                <button id="create-button" type="submit" form="the-form">Create Account</button>
+                <div class="login">
+                    <span>Already have an account?</span>
+                    <a href="https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form" target="_blank">Log in</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

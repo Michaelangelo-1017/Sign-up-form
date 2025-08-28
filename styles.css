@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Type styling*/
+input{
+    border: 1px solid black;
+    width: 200px;
+}
+input:valid{
+    border-color: green;
+}
+
+input:invalid{
+    border-color: red;
+}
+
+a{
+    color: green;
+}
+/*ID styling*/
+#side-image{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+#entire-page{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100%;
+    background-color: red;
+}
+
+#create-button{
+    border: none;
+    background-color: green;
+    color: white;
+    padding: 10px 25px;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+#the-form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+#create-button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+/*Class styling*/
+.credit, .over-image{
+    position: absolute;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+.credit{
+    bottom: 10px;
+    font-size: 12px;
+}
+
+.over-image{
+    font-size: 80px;
+    top: 20%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Helvetica, sans-serif;
+    background-color: rgba(0, 0, 0, 0.4);
+    
+}
+
+.image-side, .non-image-side{
+    min-height: 100%;
+}
+
+.image-side{
+    width: 40%;
+    position: relative;
+}
+
+.non-image-side{
+    background-color: aliceblue;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}   
+
+.labels{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-section{
+    background-color: white;
+    padding: 20px 50px 30px 40px;
+    width: 100%;
+}
+
+.bottom-section{
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.login{
+    margin-top: 20px;
+}
+
+.text-form{
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.top-section{
+    padding: 0 100px 40px 40px;
+}
+
+.top-section p{
+    font-weight: bold;
+    font-size: 1em;
+    font-family: sans-serif, Geneva, Tahoma, sans-serif;
+}
